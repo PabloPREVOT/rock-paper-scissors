@@ -131,6 +131,10 @@ p {
     background-color: hsl(214, 47%, 23%);
 }
 
+.containerFirstRowCircle.gamerChoice, .containerFirstRowCircle.botChoice{
+    width: 50%;
+}
+
 .botShadowChoice {
     width: 85px;
     height: 85px;
@@ -217,6 +221,12 @@ p {
     }
 }
 
+@media screen and (min-width: 400px) {
+    .containerFirstRowCircle  {
+        width: 45%;
+    }
+}
+
 @media screen and (min-width: 500px) {
     .titleAndScoreContainer{
         width: 75%;
@@ -235,9 +245,21 @@ p {
     .gameContainer.default {
         background: center/25% url("images/bg-triangle.svg") no-repeat;
     }
+    .containerFirstRowCircle  {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .containerFirstRowCircle  {
+        width: 28%;
+    }
 }
 
 @media screen and (min-width: 800px) {
+    .containerFirstRowCircle  {
+        width: 25%;
+    }
     .div-rules{
         justify-content: end;
     }
@@ -252,9 +274,6 @@ p {
     }
     .gameContainer.active{
         justify-content: center;
-    }
-    .containerFirstRowCircle {
-        width: 25%;
     }
     .containerCircle{
         width: 155px;
@@ -285,5 +304,17 @@ p {
     .circleIconActive{
         width: 170px;
         height: 170px;
+    }
+}
+
+@media screen and (min-width: 1525px) {
+    .gameContainer.default{
+        background: center/20% url("images/bg-triangle.svg") no-repeat;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .containerFirstRowCircle  {
+        width: 20%;
     }
 }
